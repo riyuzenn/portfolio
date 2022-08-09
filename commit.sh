@@ -7,12 +7,7 @@ commit() {
     git commit -m "$commit"
     git push origin master
 }
-main() {
-    run_format
-    git add .
-    echo
-    read -r -p "Enter commit message: " commit
-    echo "Commit message: $commit"
+confirm() {
     while true
     do
         read -r -p "Are you sure you want to commit & push? [Y/n] " input
@@ -33,5 +28,19 @@ main() {
         esac      
     done
 }
-
-main
+main() {
+    local args1="$1";
+    run_format
+    git add .
+    echo
+    read -r -p "Enter commit message: " commit
+    echo "Commit message: $commit"
+    
+    if [[ "$args1" == "--no-confirm" ]]; then
+        commit
+    else
+        confirm
+    fi
+    
+}
+main "$1"
