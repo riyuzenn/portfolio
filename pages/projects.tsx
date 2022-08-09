@@ -5,7 +5,7 @@ import PageHead from "../components/head";
 const Projects: NextPage = () => {
     return (
         <>
-            <PageHead title="riyuzenn – full stack dev" />
+            <PageHead title="riyuzenn – projects" />
             <div className="top-0 z-30 h-1 gb"></div>
             <div className="flex justify-center items-center h-screen mx-5 xl:mx-80 lg:mx-64 md:mx-52 sm:mx-48">
                 <div className="w-full space-y-9">
