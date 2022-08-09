@@ -5,7 +5,7 @@ run_format() {
 }
 commit() {
     git commit -m "$commit"
-    git push origin mater
+    git push origin master
 }
 main() {
     run_format
