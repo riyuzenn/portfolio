@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Header from "../components/header";
 import { FaTwitter, FaGithub, FaDiscord } from "react-icons/fa";
+import PageHead from "../components/head";
 
 function sendMail() {
     const mailto: string = `mailto:riyuzenn@pm.me?subject=Hello zenn&body=The quick brown fox jumps over the lazy dog`;
@@ -10,6 +11,7 @@ function sendMail() {
 const AboutPage: NextPage = () => {
     return (
         <>
+            <PageHead title="riyuzenn – about" />
             <Header />
             <div className="flex mx-5 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[5%]">
                 <div className="flex-col leading-[2rem] items-start space-y-5">
