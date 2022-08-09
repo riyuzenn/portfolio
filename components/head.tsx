@@ -19,7 +19,7 @@ export default function PageHead({
 }: PageHeadProps) {
     return (
         <Head>
-            <title>zenn@riyuzenn ~ </title>
+            <title>{title}</title>
             <meta name="google" content="notranslate" />
             <meta name="twitter:creator" content={author} />
             <meta name="referrer" content="strict-origin" />
