@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+
+::selection {
+    color: #e7e7e7;
+    background-color: #8f8aac;
+}
+
+body {
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    /* font-weight: 300; */
+    color: #a0a0a0;
+    background: #0c0c0c;
+}
+
+.gb {
+    background: linear-gradient(to right, #c6a679, #c67993, #ac8aac, #8a98ac);
+}
+
+.gt {
+    background: -webkit-linear-gradient(right, #c67993, #ac8aac);
+    background: linear-gradient(270deg, #c67993 0, #ac8aac);
+    background-size: 350%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: gradientAnim 3s ease infinite;
+    animation: gradientAnim 3s ease infinite;
+}
+
+.clearNav {
+    backdrop-filter: saturate(180%) blur(5px) !important;
+    background-color: rgba(14, 14, 14, 0.6) !important;
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* hr {
+  position: relative;
+  border-width: 5px;
+  border-color: #292929 transparent;
+  height: 11px;
+  border-style: double;
+  width: 100%;
+}
+hr:before,
+hr:after {
+  position: absolute;
+  bottom: -3.536px;
+  width: 7.071px;
+  height: 7.071px;
+  display: block;
+  border-width: 0 7.071px 7.071px 0;
+  border-color: #292929;
+  border-style: double;
+  box-sizing: border-box;
+}
+hr:before {
+  transform: translateZ(0) rotate(-45deg);
+  left: -21px;
+}
+hr:after {
+  transform: translateZ(0) rotate(135deg);
+  right: -21px;
+} */
+
+h2 {
+    font-weight: bold;
+    color: #e7e7e7;
+}
