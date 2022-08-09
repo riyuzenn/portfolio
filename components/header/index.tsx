@@ -54,15 +54,17 @@ export default function Header(props: Props) {
                     <div className={"md:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")}>
                         <nav className="flex-col flex-grow">
                             <ul className="flex flex-grow justify-end flex-wrap items-center space-x-2">
-                                {/* <li>
-                  <Link href="/">
-                    <a
-                      className={`font-medium text-[15px] text-[#a0a0a0] rounded-md hover:text-[#0e0e0e] hover:bg-[#bfbfbf] flex items-center transition duration-150 ease-in-out px-5 py-1 ${router.asPath === "/" ? "bg-[#bfbfbf] text-[#0e0e0e]" : ""}`}
-                    >
-                      home
-                    </a>
-                  </Link>
-                </li> */}
+                                <li>
+                                    <Link href="/">
+                                        <a
+                                            className={`font-medium text-[15px] text-[#a0a0a0] rounded-md hover:text-[#0e0e0e] hover:bg-[#bfbfbf] flex items-center transition duration-150 ease-in-out px-5 py-1 ${
+                                                router.asPath === "/" ? "bg-[#bfbfbf] text-[#0e0e0e]" : ""
+                                            }`}
+                                        >
+                                            home
+                                        </a>
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link href="/projects">
                                         <a
