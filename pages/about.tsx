@@ -12,13 +12,14 @@ const AboutPage: NextPage = () => {
     const [origin, setOrigin] = useState("");
     useEffect(() => {
         setOrigin(window.location.origin);
+
     }, []);
     return (
         <>
             <Header />
             <div className="flex mx-5 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[5%]">
                 <div className="flex-col leading-[2rem] items-start space-y-5">
-                    <img className="rounded-md" width={700} src={`http://www.deelay.me/1500/${origin}/banner.gif`} />
+                    <img className="rounded-md" width={700} src={`http://www.deelay.me/500/${origin}/banner.gif`} />
                     <br />
                     <h2 className="text-[20px] leading-[2rem]">Information About me</h2>
                     <p className="animate-fade">
