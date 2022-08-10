@@ -6,7 +6,7 @@ import Header from "../components/header";
 const Tools: NextPage = () => {
     return (
         <>
-            <PageHead title="riyuzenn – tools" />
+            <PageHead title="riyuzenn – tools" desc="languages & tools i use on a daily basis" />
             <Header />
             <div className="flex my-10 mx-10 xl:my-20 lg:my-20 md:my-10 sm:my-10 xl:mx-70 lg:mx-64 md:mx-28 sm:mx-48">
                 <div className="w-full space-y-9">
