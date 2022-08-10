@@ -1,30 +1,95 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import PageHead from "../components/head";
+import Header from "../components/header";
 
 const Tools: NextPage = () => {
     return (
         <>
             <PageHead title="riyuzenn – tools" />
-            <div className="top-0 z-30 h-1 gb"></div>
-            <div className="flex justify-center items-center h-screen mx-5 xl:mx-80 lg:mx-64 md:mx-52 sm:mx-48">
+            <Header />
+            <div className="flex h-screen my-10 mx-10 xl:my-20 lg:my-20 md:my-10 sm:my-10 xl:mx-70 lg:mx-64 md:mx-28 sm:mx-48">
                 <div className="w-full space-y-9">
-                    <h1 className="text-[#e7e7e7] text-[40px] font-bold leading-[3.5rem] xl:leading-[4.5rem] xl:text-[60px] lg:leading-[4.5rem] lg:text-[60px]">
-                        Under <span className="gt">:Development</span>
+                    <h1 className="text-[#e7e7e7] text-[35px] font-bold leading-[4rem] md:text-[50px] lg:text-[50px] xl:text-[50px] xl:leading-[4.5rem]">
+                        Languages & Tools
                     </h1>
-
-                    <p>
-                        Currently this page is on maintenance and under heavy development, watch out for any cautions.
-                        Quickly I advise is to go back and try to visit another page instead.
-                    </p>
-                    <p>- zenn</p>
-
+                    <p>All programming languages, frameworks and software tools I used on a daily basis.</p>
+                    <hr className="border-[#292929] " />
                     <br />
-                    <Link href="/">
-                        <a className="rounded-[20px] bg-[#262626] px-5 py-2 text-[14px] text-[#e7e7e7] border-[0.5px] border-[#4c4c4c] hover:bg-[#393939] ease-in-out">
-                            Go Back
-                        </a>
-                    </Link>
+                    <h2 className="text-[20px] leading-[2rem]">Design Tools</h2>
+                    <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5">
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img className="rounded-md shadow-md" height={78} width={78} src="/icons/figma.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://figma.com"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        figma.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Figma</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    Design tools of my choice when it comes to website design & mock ups.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img
+                                    className="rounded-md shadow-md"
+                                    height={78}
+                                    width={78}
+                                    src="/icons/affinity-designer.png"
+                                />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://affinity.serif.com/en-us/designer/"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        affinity.serif.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Affinity Designer</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    Vector graphics tool & great alternative (imo) for Adobe Illustrator.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img className="rounded-md shadow-md" height={78} width={78} src="/icons/photo.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://affinity.serif.com/en-us/photo/"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        affinity.serif.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Affinity Photo</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    Photo editting tool with alot of features & great alternative for Photoshop.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
