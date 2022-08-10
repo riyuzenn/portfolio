@@ -312,6 +312,62 @@ const Tools: NextPage = () => {
                             </div>
                         </div>
                     </div>
+                    <hr className="border-[#292929]" />
+                    <h2 className="text-[20px] leading-[2rem]">Operating System</h2>
+                    <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5">
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img height={78} width={78} src="/icons/arch.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://archlinux.org"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        archlinux.org
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Arch</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    Operating system I use when working on a project (
+                                    <a
+                                        className="text-[#ac8aac] hover:underline"
+                                        href="https://github.com/riyuzenn/dotfiles"
+                                        target="_blank"
+                                    >
+                                        dotfiles
+                                    </a>
+                                    ).
+                                </p>
+                            </div>
+                        </div>
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img height={78} width={78} src="/icons/windows10.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://www.microsoft.com/en-us/windows"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        microsoft.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Windows 10</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    OS I use when I'm working with app that is not supported with GNU/Linux.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
