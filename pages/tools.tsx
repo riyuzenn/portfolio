@@ -333,7 +333,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Operating system I use when working on a project (
+                                    Operating system I mainly use when working on a project (
                                     <a
                                         className="text-[#ac8aac] hover:underline"
                                         href="https://github.com/riyuzenn/dotfiles"
