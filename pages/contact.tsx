@@ -6,7 +6,11 @@ import PageHead from "../components/head";
 const ContactPage: NextPage = () => {
     return (
         <>
-            <PageHead title="riyuzenn – contact" desc="all of my social links can be found here." />
+            <PageHead
+                title="riyuzenn – contact"
+                desc="all of my social links can be found here."
+                image="/preview.png"
+            />
             <Header />
             <div className="flex mx-10 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[5%]">
                 <div className="flex-col leading-[2rem] items-start space-y-5">
