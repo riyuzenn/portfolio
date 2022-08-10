@@ -13,7 +13,7 @@ const AboutPage: NextPage = () => {
         <>
             <PageHead title="riyuzenn – about" />
             <Header />
-            <div className="flex mx-5 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[5%]">
+            <div className="flex mx-10 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[5%]">
                 <div className="flex-col leading-[2rem] items-start space-y-5">
                     <img className="rounded-md" width={700} src="/banner.gif" />
                     <br />
