@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+/* @import url("https://fonts.googleapis.com/css?family=JetBrains+Mono"); */
 
 ::selection {
     color: #e7e7e7;
