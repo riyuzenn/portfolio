@@ -36,7 +36,7 @@ const IndexPage: NextPage = () => {
             <div
                 className={`${
                     a || introComplete ? "block" : "hidden"
-                } flex relative mx-5 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[10%] h-[50vh]`}
+                } flex relative mx-10 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[10%] h-[50vh]`}
             >
                 <img
                     className="absolute top-[5%] opacity-30 md:top-[-5%] md:left-[35%] xl:top-[-10%] xl:left-[40%]"
