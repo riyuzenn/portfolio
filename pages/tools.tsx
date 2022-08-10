@@ -263,7 +263,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Design tools of my choice when it comes to website design & mock ups.
+                                    Design tool of my choice when it comes to website design & mock ups.
                                 </p>
                             </div>
                         </div>
