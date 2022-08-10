@@ -207,7 +207,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    A better build of VSCode w/o telemtry tracking & MS branding.
+                                    A better build of VSCode w/o telemetry tracking & MS branding.
                                 </p>
                             </div>
                         </div>
