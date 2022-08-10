@@ -5,7 +5,7 @@ import PageHead from "../components/head";
 const IndexPage: NextPage = () => {
     return (
         <>
-            <PageHead title="riyuzenn – full stack dev" />
+            <PageHead title="riyuzenn – full stack dev" image="/preview.png" />
             <Banner />
         </>
     );
