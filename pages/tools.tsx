@@ -8,12 +8,12 @@ const Tools: NextPage = () => {
         <>
             <PageHead title="riyuzenn – tools" />
             <Header />
-            <div className="flex h-screen my-10 mx-10 xl:my-20 lg:my-20 md:my-10 sm:my-10 xl:mx-70 lg:mx-64 md:mx-28 sm:mx-48">
+            <div className="flex my-10 mx-10 xl:my-20 lg:my-20 md:my-10 sm:my-10 xl:mx-70 lg:mx-64 md:mx-28 sm:mx-48">
                 <div className="w-full space-y-9">
                     <h1 className="text-[#e7e7e7] text-[35px] font-bold leading-[4rem] md:text-[50px] lg:text-[50px] xl:text-[50px] xl:leading-[4.5rem]">
                         Languages & Tools
                     </h1>
-                    <p>All programming languages, frameworks and software tools I used on a daily basis.</p>
+                    <p>All programming languages, frameworks and software tools I use on a daily basis.</p>
                     <hr className="border-[#292929] " />
                     <br />
                     <h2 className="text-[20px] leading-[2rem]">Languages I know</h2>
@@ -63,7 +63,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    A language I used for web stuff and discord.js.
+                                    A language I use for web stuff and discord.js.
                                 </p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another Object-Oriented language I used for WPF & Unity Game Engine (Before).
+                                    Another Object-Oriented language I use for WPF & Unity Game Engine (Before).
                                 </p>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another compiled language I used for developer tools too (Still learning).
+                                    Another compiled language I use for developer tools too (Still learning).
                                 </p>
                             </div>
                         </div>
@@ -151,11 +151,98 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another compiled language I used for developer tools (Still learning).
+                                    Another compiled language I use for developer tools (Still learning).
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <hr className="border-[#292929]" />
+                    <h2 className="text-[20px] leading-[2rem]">Software Tools</h2>
+                    <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5">
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img height={78} width={78} src="/icons/neovim.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://neovim.io"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        neovim.io
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Neovim</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    Another vim based text editor I use when I'm using{" "}
+                                    <a
+                                        className="text-[#ac8aac] hover:underline"
+                                        href="https://archlinux.org"
+                                        target="_blank"
+                                    >
+                                        Arch
+                                    </a>
+                                    .
+                                </p>
+                            </div>
+                        </div>
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img height={78} width={78} src="/icons/vscodium.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://code.visualstudio.com"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        vscodium.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">VSCodium</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    A better build of VSCode w/o telemtry tracking & MS branding.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img height={78} width={78} src="/icons/git.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://git-scm.com"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        git-scm.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Git</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    A version control system (VCS) I use for my projects (Hosted @
+                                    <a
+                                        className="text-[#ac8aac] hover:underline"
+                                        href="https://github.com/riyuzenn"
+                                        target="_blank"
+                                    >
+                                        GitHub
+                                    </a>
+                                    ).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="border-[#292929]" />
                     <h2 className="text-[20px] leading-[2rem]">Design Tools</h2>
                     <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5">
                         <div className="block overflow-hidden rounded-md">
