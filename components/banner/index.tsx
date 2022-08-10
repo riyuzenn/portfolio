@@ -36,13 +36,13 @@ const IndexPage: NextPage = () => {
             <div
                 className={`${
                     a || introComplete ? "block" : "hidden"
-                } flex relative mx-10 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[10%] h-[50vh]`}
+                } flex xl:relative md:relative lg:relative mx-5 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[10%] h-[50vh]`}
             >
                 <img
-                    className="absolute top-[5%] opacity-50 md:top-[-5%] md:left-[35%] xl:top-[-10%] xl:left-[40%]"
+                    className="hidden md:block xl:block lg:block md:absolute xl:absolute lg:absolute top-[5%] opacity-50 md:top-[-5%] md:left-[35%] xl:top-[-10%] xl:left-[40%]"
                     src="/grid.png"
                 />
-                <div className="absolute flex-col items-start space-y-9">
+                <div className="md:absolute xl:absolute lg:absolute flex-col items-start space-y-9">
                     <h1 className="animate-fade05 text-[#e7e7e7] text-[35px] font-bold leading-[4rem] md:text-[55px] lg:text-[70px] xl:text-[65px] xl:leading-[4.5rem]">
                         an <span className="gt">open-source</span> & linux enthusiast.
                     </h1>
