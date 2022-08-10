@@ -53,7 +53,7 @@ export default function Header(props: Props) {
                     </div>
                     <div className={"md:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")}>
                         <nav className="flex-col flex-grow">
-                            <ul className="flex flex-grow justify-end flex-wrap items-center space-x-2">
+                            <ul className="flex flex-grow justify-center md:justify-end md:px-0 md:pb-0 lg:px-0 lg:pb-0 xl:px-0 xl:pb-0 lg:justify-end xl:justify-end flex-wrap items-center px-2 pb-5 space-x-2">
                                 <li>
                                     <Link href="/">
                                         <a
