@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import PageHead from "../components/head";
 
 const NotFound: NextPage = () => {
     return (
         <>
+            <PageHead title="riyuzenn – 404" desc="Uh oh, you've fallen from a rabbit hole." image="/preview.png" />
             <div className="top-0 z-30 h-1 gb"></div>
             <div className="flex justify-center items-center h-screen">
                 <div className="flex-col w-[50%] space-y-9">
