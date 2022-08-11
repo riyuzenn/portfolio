@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import PageHead from "../components/head";
+import Header from "../components/header";
 
 const Projects: NextPage = () => {
     return (
         <>
             <PageHead title="riyuzenn – projects" image="/preview.png" />
-            <div className="top-0 z-30 h-1 gb"></div>
+            <Header />
             <div className="flex justify-center items-center h-screen mx-5 xl:mx-80 lg:mx-64 md:mx-52 sm:mx-48">
                 <div className="w-full space-y-9">
                     <h1 className="text-[#e7e7e7] text-[40px] font-bold leading-[3.5rem] xl:leading-[4.5rem] xl:text-[60px] lg:leading-[4.5rem] lg:text-[60px]">
