@@ -107,7 +107,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another Object-Oriented language I <br>used</br> for WPF & Unity Game Engine (Before).
+                                    Another Object-Oriented language I <b>used</b> for WPF & Unity Game Engine (Before).
                                 </p>
                             </div>
                         </div>
