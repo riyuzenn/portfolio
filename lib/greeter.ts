@@ -70,7 +70,7 @@ const renderGreeter = ({
 
     return `
 
-        <svg width="1024" height="350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        <svg width="1024" height="350" viewBox="0 0 1024 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
             <rect width="1024" height="350" rx="10" fill="#0C0C0C" />
             <g filter="url(#filter0_d_3_2)">
             <path d="M321 200H739V207H321V200Z" fill="url(#paint0_linear_3_2)" />
