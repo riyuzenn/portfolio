@@ -56,7 +56,7 @@ const renderGreeter = ({ text = "Oh, hello there fellah 👋!", bg = "0C0C0C", f
 
     return `
 
-        <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="1024" height="350" viewBox="0 0 1024 350" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1024" height="350" rx="10" fill="#${bg}" />
             <g filter="url(#filter0_d_3_2)">
                 <path d="M321 204H739V211H321V204Z" fill="url(#paint0_linear_3_2)" />
