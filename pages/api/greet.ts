@@ -45,7 +45,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         fg: params.fg,
         subfg: params.subfg,
     });
-    console.log(_.get_time());
+
     res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
     res.setHeader("content-security-policy", "default-src 'none'; img-src * data:; style-src 'unsafe-inline'");
     res.status(200).send(svg as any);

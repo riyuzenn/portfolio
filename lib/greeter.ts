@@ -9,8 +9,8 @@ type GreeterProps = {
     subfg?: string;
 };
 interface Time {
-    hour: number;
-    min: number;
+    hours: string;
+    mins: string;
 }
 
 function capitalize(str: string) {
@@ -19,11 +19,11 @@ function capitalize(str: string) {
 
 function greeter() {
     let current = new Date();
-    let hour = current.getHours();
+    let hours = current.getHours();
 
-    if (hour < 12) {
+    if (hours < 12) {
         return "morning";
-    } else if (hour < 18) {
+    } else if (hours < 18) {
         return "afternoon";
     } else {
         return "evening";
@@ -53,9 +53,16 @@ function getIcon(fg: string, bg: string) {
     }
 }
 
+function convert(v: string) {
+    if (v.length >= 2) return v;
+    return v.padStart(2, "0");
+}
 function get_time(): Time {
     let date = new Date();
-    return { hour: date.getHours(), min: date.getMinutes() };
+    let hours = convert(date.getHours().toString());
+    let mins = convert(date.getMinutes().toString());
+  
+    return { hours: hours, mins: mins };
 }
 
 const renderGreeter = ({
@@ -67,7 +74,7 @@ const renderGreeter = ({
     let icon = getIcon(fg, bg);
     let greeting = capitalize(greeter());
     let time = get_time();
-    console.log(`Time from script: ${time}`);
+    
     return `
 
         <svg width="1024" height="350" viewBox="0 0 1024 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -82,10 +89,10 @@ const renderGreeter = ({
             <tspan x="382" y="188.4">${text}</tspan>
             </text>
             <text fill="#94847D" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="22" letter-spacing="0em">
-            <tspan x="321" y="189.42">${time.min}</tspan>
+            <tspan x="321" y="189.42">${time.mins}</tspan>
             </text>
             <text fill="#9C7C7D" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="22" letter-spacing="0em">
-            <tspan x="321" y="160.42">${time.hour}&#10;</tspan>
+            <tspan x="321" y="160.42">${time.hours}&#10;</tspan>
             </text>
             ${icon}
             <line x1="362.5" y1="143" x2="362.5" y2="191" stroke="#${subfg}" />
