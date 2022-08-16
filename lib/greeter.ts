@@ -8,6 +8,10 @@ type GreeterProps = {
     fg?: string;
     subfg?: string;
 };
+interface Time {
+    hour: number;
+    min: number;
+}
 
 function capitalize(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -49,6 +53,11 @@ function getIcon(fg: string, bg: string) {
     }
 }
 
+function get_time(): Time {
+    let date = new Date();
+    return { hour: date.getHours(), min: date.getMinutes() };
+}
+
 const renderGreeter = ({
     text = "Oh, hello there fellah 👋!",
     bg = "0C0C0C",
@@ -57,38 +66,51 @@ const renderGreeter = ({
 }: GreeterProps) => {
     let icon = getIcon(fg, bg);
     let greeting = capitalize(greeter());
+    let time = get_time();
 
     return `
 
-        <svg width="1024" height="350" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="1024" height="350" rx="10" fill="#${bg}"/>
+        <svg width="1024" height="350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+            <rect width="1024" height="350" rx="10" fill="#0C0C0C" />
             <g filter="url(#filter0_d_3_2)">
-                <path d="M321 200H739V207H321V200Z" fill="url(#paint0_linear_3_2)"/>
+            <path d="M321 200H739V207H321V200Z" fill="url(#paint0_linear_3_2)" />
             </g>
-            <text fill="#${fg}" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="25" letter-spacing="0em"><tspan x="320" y="161.5">Good ${greeting} &#x2014; &#10;</tspan></text>
-            <text fill="#${subfg}" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="15" letter-spacing="0em"><tspan x="320" y="188.4">${text}</tspan></text>
+            <text fill="#${fg}" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="25" letter-spacing="0em">
+            <tspan x="382" y="161.5">Good ${greeting} &#x2014; &#10;</tspan>
+            </text>
+            <text fill="#${subfg}" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="15" letter-spacing="0em">
+            <tspan x="382" y="188.4">${text}</tspan>
+            </text>
+            <text fill="#94847D" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="22" letter-spacing="0em">
+            <tspan x="321" y="189.42">${time.min}</tspan>
+            </text>
+            <text fill="#9C7C7D" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" font-size="22" letter-spacing="0em">
+            <tspan x="321" y="160.42">${time.hour}&#10;</tspan>
+            </text>
             ${icon}
+            <line x1="362.5" y1="143" x2="362.5" y2="191" stroke="#${subfg}" />
             <defs>
-                <filter id="filter0_d_3_2" x="317" y="200" width="426" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="4"/>
-                    <feGaussianBlur stdDeviation="2"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_2"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_2" result="shape"/>
-                </filter>
-                <linearGradient id="paint0_linear_3_2" x1="321" y1="204" x2="739" y2="204" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9D7B7D"/>
-                    <stop offset="0.2" stop-color="#7B9D7C"/>
-                    <stop offset="0.4" stop-color="#B7976A"/>
-                    <stop offset="0.6" stop-color="#687589"/>
-                    <stop offset="0.8" stop-color="#937193"/>
-                    <stop offset="1" stop-color="#628483"/>
-                </linearGradient>
+            <filter id="filter0_d_3_2" x="317" y="200" width="426" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_2" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_2" result="shape" />
+            </filter>
+            <linearGradient id="paint0_linear_3_2" x1="321" y1="204" x2="739" y2="204" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9D7B7D" />
+                <stop offset="0.2" stop-color="#7B9D7C" />
+                <stop offset="0.4" stop-color="#B7976A" />
+                <stop offset="0.6" stop-color="#687589" />
+                <stop offset="0.8" stop-color="#937193" />
+                <stop offset="1" stop-color="#628483" />
+            </linearGradient>
             </defs>
         </svg>
+            
 
   
     `;
