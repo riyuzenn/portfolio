@@ -61,7 +61,7 @@ function get_time(): Time {
     let date = new Date();
     let hours = convert(date.getHours().toString());
     let mins = convert(date.getMinutes().toString());
-  
+
     return { hours: hours, mins: mins };
 }
 
@@ -74,7 +74,7 @@ const renderGreeter = ({
     let icon = getIcon(fg, bg);
     let greeting = capitalize(greeter());
     let time = get_time();
-    
+
     return `
 
         <svg width="1024" height="350" viewBox="0 0 1024 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
