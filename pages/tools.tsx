@@ -129,7 +129,8 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another compiled low-level performance language I use for developer tools (Still learning).
+                                    Another compiled low-level performance language I use for developer tools (Still
+                                    learning).
                                 </p>
                             </div>
                         </div>

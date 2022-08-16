@@ -57,7 +57,7 @@ const AboutPage: NextPage = () => {
                             Twitter
                         </a>{" "}
                         account. However if you want to chat me out, reach me via Discord:{" "}
-                        <b className="text-[#ac8aac]">zenn#7473</b>, or email me that can be found {" "}
+                        <b className="text-[#ac8aac]">zenn#7473</b>, or email me that can be found{" "}
                         <a href="/" className="text-[#ac8aac] hover:underline">
                             here
                         </a>
