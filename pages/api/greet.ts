@@ -3,7 +3,7 @@
 */
 
 import { NextApiRequest, NextApiResponse } from "next";
-import _ from "../../lib/greeter";
+import renderGreeter from "../../components/greeter";
 
 type ResData = {
     error?: any;
@@ -22,31 +22,16 @@ type Parameters = {
 export default async function handler(req: NextApiRequest, res: NextApiResponse<ResData>) {
     const params: Parameters = req.query;
     let svg = "";
-    let text = params.text;
-    let time = _.greeter();
 
-    switch (time) {
-        case "morning":
-            if (!text) text = params.morning;
-            break;
-
-        case "afternoon":
-            if (!text) text = params.afternoon;
-            break;
-
-        case "evening":
-            if (!text) text = params.evening;
-            break;
-    }
-
-    svg = _.renderGreeter({
-        text: text,
+    svg = renderGreeter({
         bg: params.bg,
         fg: params.fg,
         subfg: params.subfg,
+        morning: params.morning,
+        afternoon: params.afternoon,
+        evening: params.evening,
     });
-    console.log(_.get_time().hours, _.get_time().mins);
-    console.log(new Date());
+
     res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
     res.setHeader("content-security-policy", "default-src 'none'; img-src * data:; style-src 'unsafe-inline'");
     res.status(200).send(svg as any);

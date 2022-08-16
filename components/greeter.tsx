@@ -7,6 +7,9 @@ type GreeterProps = {
     bg?: string;
     fg?: string;
     subfg?: string;
+    morning?: string;
+    afternoon?: string;
+    evening?: string;
 };
 interface Time {
     hours: string;
@@ -61,20 +64,37 @@ function get_time(): Time {
     let date = new Date();
     let hours = convert(date.getHours().toString());
     let mins = convert(date.getMinutes().toString());
-  
+
     return { hours: hours, mins: mins };
 }
 
 const renderGreeter = ({
-    text = "Oh, hello there fellah 👋!",
     bg = "0C0C0C",
     fg = "A0A0A0",
     subfg = "656464",
+    morning = "Good morning fellah 👋",
+    afternoon = "Good afternoon fellah 👋",
+    evening = "Good evening fellah 👋",
 }: GreeterProps) => {
     let icon = getIcon(fg, bg);
     let greeting = capitalize(greeter());
     let time = get_time();
-    console.log(time.hours, time.mins)
+    let greet = greeter();
+    let text = "Oh, hello there fellah 👋!";
+    switch (greet) {
+        case "morning":
+            if (!text) text = morning;
+            break;
+
+        case "afternoon":
+            if (!text) text = afternoon;
+            break;
+
+        case "evening":
+            if (!text) text = evening;
+            break;
+    }
+
     return `
 
         <svg width="1024" height="350" viewBox="0 0 1024 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -123,9 +143,4 @@ const renderGreeter = ({
     `;
 };
 
-const _ = {
-    greeter,
-    get_time,
-    renderGreeter,
-};
-export default _;
+export default renderGreeter;
