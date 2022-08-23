@@ -16,12 +16,28 @@ interface Time {
     mins: string;
 }
 
+function changeTimeZone(date: any, timezone: string) {
+    if (typeof date === 'string') {
+      return new Date(
+        new Date(date).toLocaleString('en-US', {
+          timeZone: timezone,
+        }),
+      );
+    }
+  
+    return new Date(
+      date.toLocaleString('en-US', {
+        timeZone: timezone,
+      }),
+    );
+  }
+
 function capitalize(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 function greeter() {
-    let current = new Date();
+    let current = changeTimeZone(new Date(), "Europe/Amsterdam");
     let hours = current.getHours();
 
     if (hours < 12) {
@@ -61,7 +77,7 @@ function convert(v: string) {
     return v.padStart(2, "0");
 }
 function get_time(): Time {
-    let date = new Date();
+    let date = changeTimeZone(new Date(), "Europe/Amsterdam");
     let hours = convert(date.getHours().toString());
     let mins = convert(date.getMinutes().toString());
 
