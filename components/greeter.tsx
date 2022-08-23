@@ -115,12 +115,7 @@ const renderGreeter = ({
 
         <svg width="1024" height="350" viewBox="0 0 1024 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml">
             <defs>
-                <style type="text/css">
-                  @import url(http://fonts.googleapis.com/css?family=JetBrains+Mono);
-                  * {
-                    font-family: 'JetBrains Mono';
-                  }
-                </style>
+                <style type="text/css">@import url(http://fonts.googleapis.com/css?family=JetBrains+Mono);</style>
             </defs>
       
             <rect width="1024" height="350" rx="10" fill="#0C0C0C" />
