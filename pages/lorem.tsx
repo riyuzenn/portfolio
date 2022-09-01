@@ -4,7 +4,7 @@ import Typed from "react-typed";
 const LoremPage : NextPage = () => {
     return (
         <div className="flex h-screen justify-center items-center">
-            <Typed
+            {/* <Typed
                 className="text-xl"
                 strings={[
                     'hello there 👋', 
@@ -16,7 +16,10 @@ const LoremPage : NextPage = () => {
                 ]}
                 typeSpeed={30}
                 backSpeed={20}
-            />
+            />*/}
+            <div className="text-xl">
+                <h1>hello there 👋</h1>
+            </div>
             
         </div>
     )
