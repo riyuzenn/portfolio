@@ -4,7 +4,7 @@ import { FaTwitter, FaGithub, FaDiscord } from "react-icons/fa";
 import PageHead from "../components/head";
 
 function sendMail() {
-    const mailto: string = `mailto:riyuzenn@pm.me?subject=Hello zenn&body=The quick brown fox jumps over the lazy dog`;
+    const mailto: string = `mailto:riyuzenn@pm.me?subject=Hello riyu&body=The quick brown fox jumps over the lazy dog`;
     window.location.href = mailto;
 }
 
@@ -19,7 +19,7 @@ const AboutPage: NextPage = () => {
                     <br />
                     <h2 className="text-[20px] leading-[2rem]">Information About me</h2>
                     <p className="animate-fade">
-                        I'm zenn, an average unmotivated programmer with over three years of experience. I specialized
+                        I'm riyu, an average unmotivated programmer with over three years of experience. I specialized
                         in front-end development who focuses on design simplicity and minimalism. I appreciate the
                         open-source, linux community and everything BFS-related (Build From Scratch). In fact, this
                         website is re-written from scratch (again).
@@ -57,7 +57,7 @@ const AboutPage: NextPage = () => {
                             Twitter
                         </a>{" "}
                         account. However if you want to chat me out, reach me via Discord:{" "}
-                        <b className="text-[#ac8aac]">zenn#7473</b>, or email me that can be found{" "}
+                        <b className="text-[#ac8aac]">riyu#1529</b>, or email me that can be found{" "}
                         <a href="/" className="text-[#ac8aac] hover:underline">
                             here
                         </a>
