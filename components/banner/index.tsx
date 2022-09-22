@@ -48,7 +48,7 @@ const IndexPage: NextPage = () => {
                     </h1>
 
                     <p className="animate-fade">
-                        Hey there! I'm riyuzenn, but I prefer just zenn. I started my programming journey several years
+                        Hey there! I'm riyuzenn, but I prefer just zenn or riyu. I started my programming journey several years
                         ago & I've been surfing the internet for a decade.
                     </p>
 
