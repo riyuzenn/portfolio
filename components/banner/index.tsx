@@ -88,7 +88,7 @@ const IndexPage: NextPage = () => {
                             */}
 
                             <a
-                                href="https://discord.com/users/952728445010460682"
+                                href="https://discord.com/users/418872913576591383"
                                 className="hover:bg-[#262626] hover:rounded-md px-2 py-2"
                                 target="_blank"
                             >
