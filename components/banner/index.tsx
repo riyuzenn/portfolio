@@ -39,7 +39,7 @@ const IndexPage: NextPage = () => {
                 } flex xl:relative md:relative lg:relative mx-5 my-[20%] md:mx-14 md:my-[25%] lg:mx-[15%] lg:my-[20%] xl:mx-[25%] xl:my-[10%]`}
             >
                 <img
-                    className="hidden md:block xl:block lg:block md:absolute xl:absolute lg:absolute top-[5%] opacity-50 md:top-[-5%] md:left-[35%] xl:top-[-10%] xl:left-[40%]"
+                    className="hidden md:block xl:block lg:block md:absolute xl:absolute lg:absolute top-[5%] opacity-40 md:top-[-5%] md:left-[35%] xl:top-[-10%] xl:left-[40%]"
                     src="/grid.png"
                 />
                 <div className="md:absolute xl:absolute lg:absolute flex-col items-start space-y-9">
@@ -48,13 +48,13 @@ const IndexPage: NextPage = () => {
                     </h1>
 
                     <p className="animate-fade">
-                        Hey there! I'm riyuzenn, but I prefer just zenn or riyu. I started my programming journey several years
+                        Hey there! I'm riyuzenn, but I prefer riyu or zenn. I started my programming journey several years
                         ago & I've been surfing the internet for a decade.
                     </p>
 
                     <p className="animate-fade15">
-                        With that amount of time, I managed to learn several languages including python, javascript,
-                        typescript, and c#. Yet still learning c/c++ & rust. I also enjoy functional, declarative, and
+                        With that amount of time, I managed to learn several languages including rust, python, javascript,
+                        typescript, and c#. Yet still learning c/c++. I also enjoy functional, declarative, and
                         object oriented programming.
                     </p>
                     {/* 
