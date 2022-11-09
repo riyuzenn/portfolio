@@ -20,6 +20,28 @@ const Tools: NextPage = () => {
                     <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5">
                         <div className="block overflow-hidden rounded-md">
                             <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
+                                <img className="" height={78} width={78} src="/icons/rustlang.png" />
+                            </div>
+
+                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
+                                <div className="space-y-1">
+                                    <a
+                                        href="https://rustlang.com"
+                                        target="_blank"
+                                        className="text-[14px] text-[#4c4c4c] hover:underline"
+                                    >
+                                        rustlang.com
+                                    </a>
+                                    <h5 className="text-[16px] text-[#cacaca]">Rust</h5>
+                                </div>
+
+                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
+                                    Another compiled language I use for developer tools too (Still learning).
+                                </p>
+                            </div>
+                        </div>
+                        <div className="block overflow-hidden rounded-md">
+                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
                                 <img className="" height={78} width={78} src="/icons/python.png" />
                             </div>
 
@@ -134,28 +156,7 @@ const Tools: NextPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="block overflow-hidden rounded-md">
-                            <div className="flex justify-center items-center w-full shadow-md bg-[#262626] h-48">
-                                <img className="" height={78} width={78} src="/icons/rustlang.png" />
-                            </div>
-
-                            <div className="flex-col space-y-2 p-4 bg-[#191919] h-40 rounded-bl-md rounded-br-md">
-                                <div className="space-y-1">
-                                    <a
-                                        href="https://rustlang.com"
-                                        target="_blank"
-                                        className="text-[14px] text-[#4c4c4c] hover:underline"
-                                    >
-                                        rustlang.com
-                                    </a>
-                                    <h5 className="text-[16px] text-[#cacaca]">Rust</h5>
-                                </div>
-
-                                <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another compiled language I use for developer tools too (Still learning).
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                     <hr className="border-[#292929]" />
                     <h2 className="text-[20px] leading-[2rem]">Software Tools</h2>
