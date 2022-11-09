@@ -8,6 +8,11 @@
     background-color: #8f8aac;
 }
 
+.h2 {
+    font-weight: 200;
+    color: #e7e7e7;
+}
+
 body {
     font-family: "JetBrains Mono";
     font-size: 14px;
