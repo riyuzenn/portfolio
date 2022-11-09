@@ -36,7 +36,7 @@ const Tools: NextPage = () => {
                                 </div>
 
                                 <p className="mt-1 text-[14px] text-[#a0a0a0]">
-                                    Another compiled language I use for developer tools too (Still learning).
+                                    Another compiled language I use for developer tools too.
                                 </p>
                             </div>
                         </div>
