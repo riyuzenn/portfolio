@@ -57,7 +57,7 @@ const AboutPage: NextPage = () => {
                             Twitter
                         </a>{" "}
                         account. However if you want to reach me out, reach me via Discord:{" "}
-                        <b className="text-[#ac8aac]">riyu#1529</b>, or email me that can be found{" "}
+                        <b className="text-[#ac8aac]">riyu#8996</b>, or email me that can be found{" "}
                         <a href="/" className="text-[#ac8aac] hover:underline">
                             here
                         </a>
@@ -110,6 +110,18 @@ const AboutPage: NextPage = () => {
                                     className="text-[#ac8aac] hover:underline"
                                 >
                                     JetBrains Mono
+                                </a>{" "}
+                                typeface.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Source code for the portfolio can be found on {" "}
+                                <a
+                                    href="https://github.com/riyuzenn/portfolio/"
+                                    className="text-[#ac8aac] hover:underline"
+                                >
+                                    Github
                                 </a>{" "}
                                 typeface.
                             </p>
