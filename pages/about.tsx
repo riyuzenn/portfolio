@@ -19,7 +19,7 @@ const AboutPage: NextPage = () => {
                     <br />
                     <h2 className="text-[20px] leading-[2rem]">Information About me</h2>
                     <p className="animate-fade">
-                        I'm riyu, an average unmotivated programmer with over three years of experience. I specialized
+                        I'm riyu, an average unmotivated programmer with over four years of experience. I specialized
                         in front-end development who focuses on design simplicity and minimalism. I appreciate the
                         open-source, linux community and everything BFS-related (Build From Scratch). In fact, this
                         website is re-written from scratch (again).
