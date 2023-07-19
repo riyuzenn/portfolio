@@ -104,7 +104,7 @@ const ContactPage: NextPage = () => {
                                     href="https://discord.com/users/952728445010460682"
                                     className="text-[#ac8aac] hover:underline"
                                 >
-                                    riyu#8996
+                                    @riyuzenn
                                 </a>
                             </div>
                         </div>
