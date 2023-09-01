@@ -52,10 +52,10 @@ const AboutPage: NextPage = () => {
                         <a href="https://github.com/riyuzenn" className="text-[#ac8aac] hover:underline">
                             GitHub
                         </a>{" "}
-                        and{" "}
+{/*                         and{" "}
                         <a href="https://twitter.com/riyuzenn" className="text-[#ac8aac] hover:underline">
                             Twitter
-                        </a>{" "}
+                        </a>{" "} */}
                         account. However if you want to reach me out, reach me via Discord:{" "}
                         <b className="text-[#ac8aac]">riyu#8996</b>, or email me that can be found{" "}
                         <a href="/" className="text-[#ac8aac] hover:underline">
