@@ -73,13 +73,13 @@ const IndexPage: NextPage = () => {
                                 <FaGithub size={22} className="fill-[#a0a0a0] hover:fill-[#cacaca]" />
                             </a>
 
-                            <a
+{/*                             <a
                                 href="https://twitter.com/riyuzenn"
                                 className="hover:bg-[#262626] hover:rounded-md px-2 py-2"
                                 target="_blank"
                             >
                                 <FaTwitter size={22} className="fill-[#a0a0a0] hover:fill-[#cacaca]" />
-                            </a>
+                            </a> */}
 
                             {/* 
                             <a href="mailto://riyuzenn@pm.me" className="hover:bg-[#262626] hover:rounded-md px-2 py-2">
