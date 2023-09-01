@@ -62,7 +62,7 @@ const ContactPage: NextPage = () => {
                                     @riyuzenn
                                 </a>
                             </div>
-                            <div className="flex space-x-3">
+{/*                             <div className="flex space-x-3">
                                 <p className="flex items-center text-[#7975B3] font-medium">
                                     <span className="pr-2">
                                         <SiTwitter size={12} />
@@ -76,8 +76,8 @@ const ContactPage: NextPage = () => {
                                 >
                                     @riyuzenn
                                 </a>
-                            </div>
-                            <div className="flex space-x-3">
+                            </div> */}
+{/*                             <div className="flex space-x-3">
                                 <p className="flex items-center text-[#7975B3] font-medium">
                                     <span className="pr-2">
                                         <SiReddit size={12} />
@@ -91,7 +91,7 @@ const ContactPage: NextPage = () => {
                                 >
                                     @riyuzenn
                                 </a>
-                            </div>
+                            </div> */}
                             <div className="flex space-x-3">
                                 <p className="flex items-center text-[#7975B3] font-medium">
                                     <span className="pr-2">
