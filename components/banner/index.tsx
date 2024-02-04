@@ -25,8 +25,9 @@ const IndexPage: NextPage = () => {
         }
     }, []);
     const onIntroEnd = useCallback(() => {
-        localStorage.setItem("intro-completed", "true");
         setIntroComplete(true);
+        localStorage.setItem("intro-completed", "true");
+       
 
         b(true);
     }, []);
